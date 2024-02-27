@@ -23,18 +23,38 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#novo-usuario.php">Novo Usuário</a>
+                        <a class="nav-link" href="?page=novo">Novo Usuário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#listar-usuario.php">Listar Usuários</a>
+                        <a class="nav-link" href="?page=listar">Listar Usuários</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5">
+                <?php
+                switch(@$_REQUEST["page"]){
+                    case "novo":
+                        include("novo-usuario.php");
+                    break;
+                    case "listar":
+                        include("listar-usuario.php");
+                    break;
+                    default:
+                        print "<h1>Bem vindos!</h1>";
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
