@@ -40,7 +40,7 @@
         <div class="row">
             <div class="col mt-5">
                 <?php
-                    include("config.php"); //chamando arquivo de conn com o banco
+                    include("config.php"); //chamando arquivo de connx com o banco
                     switch(@$_REQUEST["page"]){
                         case "novo":
                             include("novo-usuario.php");
@@ -48,6 +48,9 @@
                         case "listar":
                             include("listar-usuario.php");
                         break;
+                        case "salvar"; //criado mais um case para salvar o usuário
+                            include("salvar-usuario.php");
+                        break;    
                         default:
                             print "<h1>Bem vindos!</h1>";
                     }
