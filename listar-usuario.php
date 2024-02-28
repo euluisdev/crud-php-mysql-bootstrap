@@ -13,6 +13,7 @@
             print "<th>Nome</th>";
             print "<th>E-mail</th>";
             print "<th>Data de Nascimento</th>";
+            print "<th>Ações</th>";
             print "</tr>";
         while($row = $res->fetch_object()) {
             print "<tr>";
@@ -20,6 +21,10 @@
             print "<td>".$row->nome."</td>";
             print "<td>".$row->email."</td>";
             print "<td>".$row->data_nasc."</td>";
+            print "<td>
+                    <button class='btn btn-success'>Editar</button>
+                    <button class='btn btn-danger'>Excluir</button>
+                   </td>";
             print "</tr>";
         }
         print "</table>";
