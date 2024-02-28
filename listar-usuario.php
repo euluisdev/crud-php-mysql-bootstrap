@@ -1,4 +1,4 @@
-<h1>Listar Usuário</h1>
+<h1>Lista dos Usuários</h1>
 <?php 
     $sql = "SELECT * FROM usuarios";
 
@@ -7,12 +7,22 @@
     $qtd = $res->num_rows;
 
     if($qtd > 0) {
+        print "<table class='table table-hover table-striped table-bordered'>";
+            print "<tr>";
+            print "<th>#</th>";
+            print "<th>Nome</th>";
+            print "<th>E-mail</th>";
+            print "<th>Data de Nascimento</th>";
+            print "</tr>";
         while($row = $res->fetch_object()) {
-            print $row->id;
-            print $row->nome;
-            print $row->email;
-            print $row->data_nasc;
+            print "<tr>";
+            print "<td>".$row->id."</td>";
+            print "<td>".$row->nome."</td>";
+            print "<td>".$row->email."</td>";
+            print "<td>".$row->data_nasc."</td>";
+            print "</tr>";
         }
+        print "</table>";
     }else{
         print "<p class='alert alert-danger'>Não encontrou resultados!</p>";
     }
