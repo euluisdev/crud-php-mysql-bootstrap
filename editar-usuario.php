@@ -5,9 +5,9 @@
     $row = $res->fetch_object();
 
 ?>
-<form action="?page=salvar" method="POST"> <!-- linha para page=salvar form com POST -->
-    <input type="hidden" name="acao" value="editar"> <!-- a ação vai oculta, não vê a url -->
-    <input type="hidden" name="id" value="<?php print $row->id; ?>"><!-- importante para editar -->
+<form action="?page=salvar" method="POST">   <!-- linha para page=salvar form com POST -->
+    <input type="hidden" name="acao" value="editar">   <!-- a ação vai oculta, não vê a url -->
+    <input type="hidden" name="id" value="<?php print $row->id; ?>">   <!-- importante para editar -->
     <div class="mb-3">
         <label>Nome</label>
         <input type="text" name="nome" value="<?php print $row->nome; ?>" class="form-control">
