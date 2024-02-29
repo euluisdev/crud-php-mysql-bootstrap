@@ -1,6 +1,7 @@
 <?php 
     switch ($_REQUEST["acao"]) {
         case 'cadastrar':
+
             $nome = $_POST["nome"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
@@ -19,6 +20,7 @@
             }
             break;
         case 'editar':
+
             $nome = $_POST["nome"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
@@ -44,5 +46,17 @@
             break;
         case 'excluir':
             
+            $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"];  
+
+            $res = $conn->query($sql);  // consulta no bd, o result é armazenado na var $res
+
+            if($res == true) {
+                echo "<script>alert('Excluído com sucesso!');</script>";
+                echo "<script>location.href='?page=listar';</script>";
+            }else{
+                echo "<script>alert('Não foi possível Excluir');</script>";
+                echo "<script>location.href='?page=listar';</script>"; //redireciona page listar
+            }
+
             break;
     }
