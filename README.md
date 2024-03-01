@@ -1,4 +1,4 @@
-# Sistema de Cadastro de Usuários  [CRUD]
+# Sistema de Cadastro de Usuários  [CRUD] - RELEASE in progress v1.0.0 
 
 Este é um sistema de cadastro de usuários simples desenvolvido em PHP, javaScript, HTML, CSS e BootsTrap. Ele permite adicionar, editar, listar e excluir usuários de um banco de dados MySQL.
 
