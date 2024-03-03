@@ -40,8 +40,10 @@
         <div class="row">
             <div class="col mt-5">
                 <?php
-                    include("config.php"); //chamando arquivo de connx com o banco
-                    switch(@$_REQUEST["page"]){
+                    include("config.php"); //chamando arquivo de connx com o banco 
+
+                    $page = isset($_REQUEST["page"]) ? $_REQUEST["page"] : null; //verificação
+                    switch($page){
                         case "novo":
                             include("novo-usuario.php");
                         break;
@@ -55,7 +57,17 @@
                             include("editar-usuario.php");
                         break; 
                         default:
-                            print "<h1>Bem vindos!</h1>";
+                            echo '
+                                <div class="container mt-5">
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-3 text-center">
+                                            <h1 class="display-4 mb-4">Bem-vindo!</h1>
+                                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisl ut ipsum fringilla condimentum. Ut auctor libero sapien, ac convallis dui interdum et.</p>
+                                            <a href="?page=new" class="btn btn-dark btn-lg">Começar</a>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            ';
                     }
                 ?>
             </div>
