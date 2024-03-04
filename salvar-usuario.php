@@ -1,13 +1,13 @@
 <?php 
     switch ($_REQUEST["acao"]) {
         case 'cadastrar':
-
             $nome = $_POST["nome"];
+            $genero = $POST["genero"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
             $data_nasc = $_POST["data_nasc"];
 
-            $sql = "INSERT INTO usuarios (nome, email, senha, data_nasc) VALUES ('{$nome}', '{$email}', '{$senha}', '{$data_nasc}')";
+            $sql = "INSERT INTO usuarios (nome, genero, email, senha, data_nasc) VALUES ('{$nome}', '{$genero}', '{$email}', '{$senha}', '{$data_nasc}')";
             
             $res = $conn->query($sql);  // consulta no bd, o result é armazenado na var $res
 
@@ -22,12 +22,14 @@
         case 'editar':
 
             $nome = $_POST["nome"];
+            $genero = $POST["genero"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
             $data_nasc = $_POST["data_nasc"];
 
             $sql = "UPDATE usuarios SET  /* atualiza os dados na tabela usuarios */
                         nome = '{$nome}',
+                        genero = '{$genero}',
                         email = '{$email}',
                         senha = '{$senha}',
                         data_nasc = '{$data_nasc}'

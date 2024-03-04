@@ -62,8 +62,11 @@
                                     <div class="row">
                                         <div class="col-md-6 offset-md-3 text-center">
                                             <h1 class="display-4 mb-4">Bem-vindo!</h1>
-                                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisl ut ipsum fringilla condimentum. Ut auctor libero sapien, ac convallis dui interdum et.</p>
-                                            <a href="?page=new" class="btn btn-dark btn-lg">Começar</a>
+                                            <p class="lead">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
+                                            in nisl ut ipsum fringilla condimentum. Ut auctor libero sapien, ac convallis dui interdum et.
+                                            </p>
+                                            <button class="btn btn-dark btn-lg"><a href="?page=novo">Começar</a></button>
                                         </div>
                                     </div>
                                 </div>                        
