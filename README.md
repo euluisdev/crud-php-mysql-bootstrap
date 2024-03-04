@@ -45,7 +45,7 @@ Este é um sistema de cadastro de usuários simples desenvolvido em PHP, javaScr
 ## Observações
 
 - Certifique-se de ter o servidor Apache e o MySQL instalados em seu ambiente de desenvolvimento para que o sistema funcione corretamente.
-- Este é um projeto de exemplo e pode ser expandido com mais recursos e melhorias, como validações de formulário, autenticação de usuário, etc.
+- Este é um projeto de exemplo e pode ser expandido com mais recursos e melhorias, são muito bem vindas.
 
 ## Licença
 
