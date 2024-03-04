@@ -2,7 +2,7 @@
     switch ($_REQUEST["acao"]) {
         case 'cadastrar':
             $nome = $_POST["nome"];
-            $genero = $POST["genero"];
+            $genero = $_POST["genero"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
             $data_nasc = $_POST["data_nasc"];
@@ -22,7 +22,7 @@
         case 'editar':
 
             $nome = $_POST["nome"];
-            $genero = $POST["genero"];
+            $genero = $_POST["genero"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
             $data_nasc = $_POST["data_nasc"];

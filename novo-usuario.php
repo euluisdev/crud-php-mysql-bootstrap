@@ -30,6 +30,6 @@
         <label for="floatingInput">Data de nascimento</label>
     </div>
     <div class="mb-3">
-        <button type="submit" class="btn btn-intline-dark">Enviar</button>
+        <button type="submit" class="btn btn-outline-dark">Enviar</button>
     </div>
 </form> 
