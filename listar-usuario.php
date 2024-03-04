@@ -1,4 +1,4 @@
-<h1>Lista dos Usuários</h1>
+<h1 class="mb-5">Lista dos Usuários</h1>
 <?php 
     $sql = "SELECT * FROM usuarios";
 
