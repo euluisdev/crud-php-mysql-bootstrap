@@ -4,6 +4,7 @@ Este é um sistema de cadastro de usuários simples desenvolvido em PHP, javaScr
 
 ## Funcionalidades
 
+- Lista Suspensa
 - Adicionar novo usuário
 - Editar informações de usuário existente
 - Listar todos os usuários cadastrados
